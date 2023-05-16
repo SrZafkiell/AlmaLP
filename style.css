@@ -1,0 +1,576 @@
+/* ---------------------------------------------------------- */
+/* START OF GLOBAL CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face { 
+    font-family: Aurelia; 
+    src: url('public/fonts/Aurelia.otf'); } 
+@font-face {
+    font-family: Constantine;
+    src: url('public/fonts/Constantine.ttf');
+}
+
+body {
+    background-color: rgb(254, 246, 240);
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    grid-template-rows: 0.2fr 1fr 0.1fr;
+    display: grid;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 1920px;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+}
+
+.page-size{
+    display: flex;
+    max-width: 1920px;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* Main Font Color */
+.main-font-color {
+    color: rgb(215, 131, 126);
+}
+
+/* Neon effect for the titles using the class "neon" */
+h1.neon, h2.neon, h3.neon{
+    color: rgb(215, 131, 126);
+    border-radius: 5px;
+    border-color: black;
+    text-shadow: 1px 3px 10px rgba(215, 130, 126, 0.61);
+}
+
+/* Font Constantine - Class */
+.font-constantine {
+    font-family: Constantine;
+}
+
+/* Font Aurelia - Class */
+.font-aurelia {
+    font-family: Aurelia;
+}
+
+/* Fixed chat start */
+
+/* Fixed Chat - Title position */
+.contact-chat-fixed-form-title{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center; /* horizontally center all grid items */
+    align-items: center; /* vertically center all grid items */
+    text-align: center; /* center all text */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Fixed Chat - Title font size */
+.contact-chat-fixed-form-title h1{
+    font-size: 1.5em;
+}
+
+/* Fixed chat - Box Design */
+.contact-chat-fixed{
+    bottom: 50px;
+    right: 0;
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    background-color: rgba(254, 227, 236, 0.712);
+    border-color: rgb(215, 131, 126);
+    border-style: solid none solid solid;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px;
+    overflow: hidden;
+    transition: width 0.3s, height 1.5s;
+}
+
+/* Fixed Chat - Box Visual */
+.contact-chat-fixed-form {
+    display: grid;
+    grid-template-columns: 70px 3fr;
+    height: 100%;
+}
+
+
+/* Fixed Chat - Title Visual */
+.contact-chat-fixed-title{
+    display: flex;
+}
+
+/* Fixed Chat - Content Visual */
+.contact-chat-fixed-content {
+    display: none;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-left: rgb(215, 131, 126) solid;
+}
+
+
+/* Fixed Chat - Form Inputs Design */
+.contact-chat-fixed-form-input{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 20px 0px 20px;
+}
+.contact-chat-fixed-form-input input{
+    margin-bottom: 15px;
+}
+
+
+/* Fixed Chat - Form Button Design */
+.contact-chat-fixed-form-button .contact-chat-submit{
+    margin: 10px;
+    padding: 5px 15px 5px 15px;
+    font-size: 1em;
+    background-color: rgb(250, 247, 248);
+    border: rgb(242, 217, 216) solid;
+    border-radius: 0% 0% 15% 15%;
+    font-size: 20px;
+}
+
+/* Fixed Chat - Form Button Hover Design */
+.contact-chat-fixed-form-button .contact-chat-submit:hover{
+    background-color: #f7e3ee98;
+    border-radius: 15px 15px 0px 0px;
+}
+/* Fixed chat ends */
+/* END OF GLOBAL CSS */
+
+/* ---------------------------------------------------------- */
+
+/* START OF <HEADER> CSS */
+
+header {
+    /* background-color: aqua; */
+    margin-bottom: 70px;
+}
+
+.header-top-container {
+    padding-top: 50px;
+    grid-template-rows: 0.2fr 1fr 0.2fr 0.2fr;
+    display: grid;
+    border-bottom: rgba(215, 130, 126, 0.1) solid;
+    background-color: rgba(235, 213, 220, 0.25);
+    /* border-bottom: #f5d9eca9 solid; */
+    /* background-color: blue; */
+}
+
+.img-divisor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: -50px;
+}
+
+.img-divisor img{
+    width: 20%;
+    height: 65px;
+    opacity: 70%;
+}
+
+.logo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img{
+    width: 250px;
+    height: 250px;
+}
+
+.alma-quote{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+h1.quote{
+    font-size: 2em;
+    color: #4a4a4a;
+    text-align: center;
+    text-shadow: 1px 3px 10px rgba(247, 196, 230, 0.671);
+    font-family: Aurelia;
+}
+
+h1.quote:hover{
+    text-shadow: 1px 3px 10px rgb(255, 180, 180);
+}
+
+/* END OF <HEADER> CSS */
+
+/* ---------------------------------------------------------- */
+
+/* START OF <MAIN> CSS */
+
+.main-menu{
+    /* background-color: blue; */
+    /*Margin order: Top Right Bottom Left */
+    margin: 20px 0px 20px 0px;
+}
+
+.main-menu ul{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.main-menu li{
+    list-style: none;
+    display: flex;
+}
+
+.main-menu li a{
+    display: flex;
+    text-decoration: none;
+    margin: 10px 5px 10px 5px;
+}
+
+.main-menu li button{
+    background-color: rgb(250, 247, 248);
+    font-size: 30px;
+    border-radius: 10px 0px 10px 0px;
+    border-color: rgb(242, 217, 216);
+    font-family: Constantine;
+    padding: 5px 10px 5px 10px;
+}
+
+.main-menu li button:hover{
+    background-color: #f7e3ee98;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.main-menu li img{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50px;
+    opacity: 50%;
+}
+
+.main-menu ul li:hover img{
+    opacity: 100%;
+}
+
+.middle-container{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.4fr;
+    padding-top: 130px;
+}
+
+.client-rates{
+    /* background-color: blueviolet; */
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.client-rates-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.client-rates h2{
+    text-align: center;
+    margin: 10px;
+}
+
+.our-process {
+    /* background-color: blue; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.our-process h2{
+    text-align: center;
+    margin: 10px;
+}
+
+.process-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/* img.process-separator{
+    width: 240px;
+    height: 350px;
+    margin: 20px;
+} */
+
+.our-team {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.featured-products {
+    /* background-color: aqua; */
+    text-align: center;
+    align-content: center;
+}
+
+/* Nuestro equipo de trabajo - Design of cards */
+.image-card {
+    position: relative;
+    width: 240px;
+    height: 350px;
+    margin: 20px;
+}
+
+.image-card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.image-card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(255, 180, 180);
+}
+
+.image-card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #FFF;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.image-card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(215, 131, 126);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px rgb(255, 180, 180);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.image-card .back .link a{
+    color: #f3f3f3;
+}
+
+.image-card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.image-card .back p{
+    letter-spacing: 1px;
+}
+
+.image-card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.image-card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* Team section */
+
+.team{
+    margin-top: 40px;
+}
+
+.process {
+    margin-top: 40px;
+}
+
+
+/* END OF <MAIN> CSS */
+
+/* ---------------------------------------------------------- */
+
+/* START OF <FOOTER> CSS */
+
+/* Bottom Container (Footer) - Footer Main Container Design */
+.bottom-container {
+    display: grid;
+    grid-template-rows: 1fr 0.1fr;
+}
+
+
+/* Bottom Container (Footer) - Top Container */
+.footer-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 200px;
+    background-color: rgba(235, 213, 220, 0.25);
+    border-top: rgba(215, 130, 126, 0.1) solid;
+}
+/* background-color: rgba(235, 213, 220, 0.25); */
+
+/*Margin order: Top Right Bottom Left */
+/* Bottom Container (Footer) - Icons Design */
+.footer-icon {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+/* Bottom Container (Footer) - Top Left Container - Title Design */
+.footer-top-left section h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.footer-top a{
+    text-decoration: none;
+}
+
+/* Bottom Container (Footer) - Top Middle Container */
+.footer-top-middle h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+/* Bottom Container (Footer) - Top Right Container */
+.footer-top-right section h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Bottom Container (Footer) - Bottom Container (Rights) */
+.footer-bottom{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: aqua;
+    height: 30px;
+    background-color: rgba(235, 213, 220, 0.897);
+    bottom: 0;
+}
+
+/* Bottom Container (Footer) - Bottom Container (Rights) - Text Design */
+.footer-bottom a{
+    color: #4a4a4a;
+}
+.footer-bottom p{
+    color: #4a4a4a;
+}
+
+/* END OF <FOOTER> CSS */
+
+/* ---------------------------------------------------------- */
+
+
+/* START OF MEDIA QUERY FOR PHONES - RESPONSIVE */
+@media (min-width: 300px) and (max-width: 600px){
+    body {
+        min-width: 300px;
+        max-width: 600px;
+    }
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .page-size{
+        min-width: 300px;
+        max-width: 600px;
+    }
+    .header-top-container {
+        min-width: 300px;
+        max-width: 600px;
+        position: grid;
+    }
+}
+/* END OF MEDIA QUERY FOR PHONES - RESPONSIVE */
+
+/* ---------------------------------------------------------- */
+
+
+/* START OF MEDIA QUERY FOR TABLES AND LAPTOPS - RESPONSIVE */
+@media (min-width: 601px) and (max-width: 1023px){
+
+}
+/* END OF MEDIA QUERY FOR TABLES AND LAPTOPS - RESPONSIVE */
+
+
+/* ---------------------------------------------------------- */
+
+
+/* START OF MEDIA QUERY FOR LAPTOPS AND PCS - RESPONSIVE */
+@media (min-width: 1023px) and (max-width: 1600px){
+
+}
+/* END OF MEDIA QUERY FOR LAPTOPS AND PCS - RESPONSIVE */
+
+/* ---------------------------------------------------------- */
